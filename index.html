@@ -3,112 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <title>Bubbleton & Associates</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
     }
     header {
-      background-color: #2d3748;
-      color: white;
-      padding: 2rem 1rem;
+      background: #0b0c10;
+      color: #fff;
       text-align: center;
+      padding: 80px 20px;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      font-weight: bold;
     }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
     }
-    .card {
-      background: white;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    nav {
+      background-color: #1f2833;
     }
-    .card h2 {
-      margin-top: 0;
+    .navbar-nav .nav-link {
+      color: #66fcf1 !important;
+      font-weight: bold;
+    }
+    .section {
+      padding: 30px 15px;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .footer {
+      background-color: #0b0c10;
+      color: #c5c6c7;
+      text-align: center;
+      padding: 20px 10px;
     }
     a {
-      color: #2b6cb0;
-      text-decoration: none;
+      color: #45a29e;
     }
     a:hover {
-      text-decoration: underline;
+      color: #66fcf1;
     }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #e2e8f0;
-      font-size: 0.9rem;
+    ul {
+      list-style: disc;
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+	  <img src="/favicon.ico" alt="Bubbleton & Associates Logo" style="height: 50px; margin-right: 10px;">
+      <a class="navbar-brand" href="#">Bubbleton & Associates</a>
+    </div>
+  </nav>
   <header>
-    <h1>Bubbleton & Associates</h1>
-    <p>Protecting civil liberties. Upholding justice. Challenging abuse of power.</p>
+    <h1>Standing Up for the People</h1>
+    <p>Bubbleton & Associates is committed to justice — from civil rights and business law to defending constitutional freedoms. We don’t back down from a challenge. We fight for the people.</p>
   </header>
 
-  <div class="container">
-    <div class="card">
-      <h2>Current Case</h2>
-      <p>
-        <strong>Deacon v. Waters et al.</strong><br />
-        Filed in the Court of Common Pleas, Philadelphia County.<br />
-        Alleging First Amendment retaliation following the wrongful suspension of a public employee for speaking on command inactivity.<br />
-        <a href="/deacon-v-waters-1/complaint.pdf" target="_blank">View Full Complaint</a>
-      </p>
-    </div>
+  <section class="container section" id="cases">
+    <h2>Featured Cases</h2>
+    <p><strong>Deacon v. Waters et al.</strong><br>
+    Filed in the Court of Common Pleas, Philadelphia County. This case challenges the retaliatory suspension of a public employee who voiced concern over leadership inactivity.<br>
+    <a href="/deacon-v-waters-1/complaint.pdf" target="_blank">Read the Complaint</a></p>
 
-    <div class="card">
-      <h2>Past Cases</h2>
-      <p>
-        <strong>Bubbleton v. Waters et al.</strong><br />
-        The foundational case that first challenged retaliation and selective enforcement within PSP command structures.<br />
-        <a href="/bubbleton-v-waters-1/complaint.pdf" target="_blank">View Full Complaint</a><br>
-        <a href="/bubbleton-v-waters-1/final-order.pdf" target="_blank">View Final Order</a>
-      </p>
-    </div>
+    <p><strong>Bubbleton v. Waters et al.</strong><br>
+    Our landmark civil rights case addressing selective enforcement and suppression of speech within a state agency.<br>
+    <a href="/bubbleton-v-waters-1/complaint.pdf" target="_blank">Read the Complaint</a><br><a href="/bubbleton-v-waters-1/final-order.pdf" target="_blank">Read the Final Order</a></p>
+  </section>
 
-    <div class="card">
-      <h2>Legal Focus</h2>
-      <ul>
-        <li>Consumer & Business Law</li>
-        <li>Civil Rights & Government Accountability</li>
-        <li>Constitutional Claims (Speech, Due Process, etc.)</li>
-      </ul>
-    </div>
+  <section class="container section" id="focus">
+    <h2>Our Legal Focus</h2>
+    <ul>
+      <li>Consumer & Business Law</li>
+      <li>Civil Rights & Government Accountability</li>
+      <li>Constitutional & First Amendment Advocacy</li>
+    </ul>
+  </section>
 
-    <div class="card">
-      <h2>Court of Practice</h2>
-      <p>All filings take place in the Court of Common Pleas, First Judicial District of Pennsylvania, Philadelphia County – Civil Trial Division.</p>
-    </div>
+  <section class="container section" id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Bryce B. Bubbleton, Esq.<br>
+      11031 Cedar Street, Springfield, PA 1103<br>
+      (800) 555-0101<br>
+      <a href="mailto:bubbleton@bubbletonlaw.com">bubbleton@bubbletonlaw.com</a><br>
+      <a href="https://discord.gg/WwZm6rcs54" target="_blank">Join our Discord Community</a>
+    </p>
+  </section>
 
-    <div class="card">
-      <h2>Contact</h2>
-      <p>
-        Bryce B. Bubbleton, Esq.<br />
-        11031 Cedar Street, Springfield, PA 1103<br />
-        (800) 555-0101<br />
-        bubbleton@bubbletonlaw.com
-      </p>
-      <p>
-        Join our community: <a href="https://discord.gg/WwZm6rcs54" target="_blank">Discord Server</a>
-      </p>
-    </div>
+  <div class="footer">
+    &copy; 2025 Bubbleton & Associates. All rights reserved.
   </div>
 
-  <footer>
-    &copy; 2025 Bubbleton & Associates. All rights reserved.<br>(website under development)
-  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
